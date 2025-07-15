@@ -26,7 +26,7 @@ import {
   SiPostman
 } from "react-icons/si";
 
-// data
+// data (✅ fixed: using icon components instead of JSX)
 export const aboutData = [
   {
     title: 'skills',
@@ -34,28 +34,25 @@ export const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />, <FaCss3 />, <FaJs />, <FaReact />, <SiNextdotjs />,
-          <FaBootstrap />, <SiFramer />, <FaWordpress />, <FaFigma />
+          FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs,
+          FaBootstrap, SiFramer, FaWordpress, FaFigma
         ],
       },
       {
         title: 'Backend Development',
-        icons: [<SiExpress />, <FaNode />, <SiMongodb />, <SiMysql />, <FaJava />, <SiPostman />],
+        icons: [SiExpress, FaNode, SiMongodb, SiMysql, FaJava, SiPostman],
       },
       {
         title: 'Version Control & Deployment',
-        icons: [<FaGitAlt />, <FaGithub />],
+        icons: [FaGitAlt, FaGithub],
       },
     ],
   },
-  
-  
   {
     title: 'credentials',
     info: [
-     
-      { title: ' B.Tech,Computer Science- RTU Kota', stage: '2023 - 2027' },
-       { title: 'Completed 12th (Science) – Dr. Bansi Dhar School,', stage:'2022' },
+      { title: 'B.Tech, Computer Science – RTU Kota', stage: '2023 - 2027' },
+      { title: 'Completed 12th (Science) – Dr. Bansi Dhar School', stage: '2022' },
       { title: 'Completed 10th – Dr. Bansi Dhar School', stage: '2020' },
     ],
   },
@@ -71,7 +68,6 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    // ✅ More top padding added here to shift content lower
     <div className="min-h-screen bg-primary/30 pt-[9rem] sm:pt-[10rem] md:pt-[12rem] pb-[6rem] text-center xl:text-left relative">
       <Circles />
 
@@ -142,14 +138,14 @@ const About = () => {
                 key={itemIndex}
                 onClick={() => setIndex(itemIndex)}
                 className={`relative cursor-pointer capitalize 
-    text-[11px] sm:text-sm md:text-base xl:text-lg font-medium 
-    px-2 py-1
-    ${index === itemIndex
+                  text-[11px] sm:text-sm md:text-base xl:text-lg font-medium 
+                  px-2 py-1
+                  ${index === itemIndex
                     ? 'text-accent after:w-full after:bg-accent'
                     : 'text-white/70 after:w-0 after:bg-white/30'
                   }
-    after:h-[2px] after:absolute after:bottom-0 after:left-0 
-    after:transition-all after:duration-300 after:rounded`}
+                  after:h-[2px] after:absolute after:bottom-0 after:left-0 
+                  after:transition-all after:duration-300 after:rounded`}
               >
                 {item.title}
               </div>
@@ -167,12 +163,12 @@ const About = () => {
                 <div className="hidden md:flex">-</div>
                 <div>{item.stage}</div>
                 <div className="flex gap-x-4">
-                  {item.icons?.map((icon, iconIndex) => (
+                  {item.icons?.map((IconComponent, iconIndex) => (
                     <div
                       key={iconIndex}
                       className="text-lg sm:text-xl md:text-2xl text-white"
                     >
-                      {icon}
+                      <IconComponent />
                     </div>
                   ))}
                 </div>
@@ -182,7 +178,6 @@ const About = () => {
         </motion.div>
       </div>
 
-      {/* ✅ Optional: Add bottom spacing to prevent crowding at page end */}
       <div className="h-10 sm:h-12 md:h-14" />
     </div>
   );
