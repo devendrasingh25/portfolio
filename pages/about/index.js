@@ -161,7 +161,7 @@ const About = () => {
               >
                 <div className="font-light mb-2 md:mb-0">{item.title}</div>
                 <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
+                {item.stage && <div>{item.stage}</div>}
                 <div className="flex gap-x-4">
                   {item.icons?.map((IconComponent, iconIndex) => (
                     <div

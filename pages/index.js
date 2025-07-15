@@ -21,10 +21,10 @@ const Home = () => {
             exit="hidden"
             className="h1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
           >
-            I'm <span className="text-accent"> Devendra </span>
+            I&apos;m <span className="text-accent"> Devendra </span>
             <br />
             <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-              Web developer & <br /> programmer
+              Web developer &amp; <br /> programmer
             </span>
           </motion.h1>
 
@@ -52,7 +52,7 @@ const Home = () => {
               href="https://drive.google.com/file/d/1z_9FlGYhJhKJT-H2Zi3wGbpwqzslLwnd/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-7 py-3 bg-accent hover:bg-transparent text-white font-semibold rounded-lg shadow-md   hover:scale-105 transition-all border border-white/5"
+              className="inline-flex items-center gap-3 px-7 py-3 bg-accent hover:bg-transparent text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-all border border-white/5"
             >
               Download CV
             </Link>
@@ -95,7 +95,8 @@ const Home = () => {
           transition={{ duration: 1, ease: 'easeInOut' }}
           className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] xl:max-w-[600px] absolute bottom-0 left-1/2 xl:right-[6%] transform -translate-x-1/2 xl:translate-x-0"
         >
-          
+          {/* Add avatar image or component here */}
+          <Avatar />
         </motion.div>
       </div>
     </div>

@@ -69,7 +69,7 @@ const Contact = () => {
             exit="hidden"
             className="mb-10 text-2xl sm:text-3xl lg:text-5xl font-bold"
           >
-            Let's <span className="text-accent">work together</span>
+            Let&apos;s <span className="text-accent">work together</span>
           </motion.h2>
 
           <motion.form
@@ -134,7 +134,7 @@ const Contact = () => {
               className="btn rounded-full border border-white/50 max-w-[150px] px-6 py-2 transition-all duration-300 flex items-center justify-center group relative text-sm"
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Let's Talk
+                Let&apos;s Talk
               </span>
               <BsArrowRight className="absolute -translate-y-[120%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 text-[20px]" />
             </button>
