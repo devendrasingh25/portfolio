@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@next/font": "^13.4.4",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.1.0",
+    "emailjs-com": "^3.2.0",
+    "express": "^5.1.0",
     "framer-motion": "^10.12.16",
     "next": "13.4.3",
+    "nodemailer": "^7.0.5",
     "react": "18.2.0",
     "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
@@ -27,5 +34,18 @@
     "eslint-config-next": "13.4.3",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianmihai01/ethan-portfolio-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristianmihai01/ethan-portfolio-starter/issues"
+  },
+  "homepage": "https://github.com/cristianmihai01/ethan-portfolio-starter#readme"
 }
