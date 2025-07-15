@@ -8,60 +8,17 @@ import { fadeIn } from "../../variants";
 import { FaGithub, FaLink } from "react-icons/fa";
 
 const projects = [
+ 
   {
     id: 1,
-    title: "Show Booking app",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/bulb.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    id: 2,
     title: "Burger-Store-React-app",
-    description: "Analytics dashboard with charts and insights.",
+    description: "I built a responsive Food Delivery App UI using React, Vite, Tailwind CSS, and Bootstrap. The design features clean layouts, smooth navigation, and reusable components, offering an intuitive experience for browsing food items and menus. Vite ensured fast builds, while Tailwind and Bootstrap handled styling and responsiveness across devices.",
     image: "/2.png",
     tags: ["framer-motion", "Tailwindcss", "Next.js"],
     demoUrl: "https://food-app-lake-tau.vercel.app/",
     githubUrl: "https://github.com/devendrasingh25/Food-App"
   },
-  {
-    id: 3,
-    title: "Weather app",
-    description: "Online store with user auth and Stripe payments.",
-    image: "/bulb.png",
-    tags: ["Html", "Css", "Java Script"],
-    demoUrl: "#",
-    githubUrl: ""
-  },
-  {
-    id: 4,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/bulb.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    id: 5,
-    title: "Orbit Analytics Dashboard",
-    description: "Analytics dashboard with charts and insights.",
-    image: "/bulb.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    id: 6,
-    title: "E-commerce Platform",
-    description: "Online store with user auth and Stripe payments.",
-    image: "/bulb.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#"
-  }
+  
 ];
 
 const Work = () => {
