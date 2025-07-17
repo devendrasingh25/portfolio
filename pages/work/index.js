@@ -60,15 +60,7 @@ const Work = () => {
               I’ve worked on a variety of projects that showcase my skills in frontend development, JavaScript, React, and Next.js.
             </p>
 
-            <a
-              href="https://github.com/devendrasingh25"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 bg-accent hover:bg-transparent text-white text-sm sm:text-base font-semibold rounded-md shadow-md hover:scale-105 transition-all border border-white/5"
-            >
-              My GitHub
-              <AiOutlineArrowRight className="text-lg sm:text-xl" />
-            </a>
+          
           </motion.div>
 
           {/* Right side: slider */}
