@@ -11,12 +11,30 @@ const projects = [
  
   {
     id: 1,
-    title: "Burger-Store-React-app",
-    description: "I built a responsive Food Delivery App UI using React, Vite, Tailwind CSS, and Bootstrap. The design features clean layouts, smooth navigation, and reusable components, offering an intuitive experience for browsing food items and menus. Vite ensured fast builds, while Tailwind and Bootstrap handled styling and responsiveness across devices.",
-    image: "/2.png",
+    title: "Burger Store React app",
+    description: "Built a responsive Food Delivery App UI using React, Vite, Tailwind CSS, and Bootstrap. Implemented clean layouts, smooth navigation, and reusable components. Used Vite for fast builds and Tailwind/Bootstrap for responsive styling.",
+    image: "/3.png",
     tags: ["framer-motion", "Tailwindcss", "Next.js"],
     demoUrl: "https://food-app-lake-tau.vercel.app/",
-    githubUrl: "https://github.com/devendrasingh25/Food-App"
+    githubUrl: "https://github.com/devendrasingh25/Food-App"},
+    {
+    id: 2,
+    title: "Movie Ticket App",
+    description: "Developed a Movie Ticket Booking App using React, Tailwind CSS, and a backend with full CRUD support. Users can select movies, view live trailers, choose seats, and book tickets. Includes an admin panel for managing movies, showtimes, and bookings.",
+    image: "/2.png",
+    tags: ["framer-motion", "Tailwindcss", "Next.js"],
+    demoUrl: "",
+    githubUrl: "https://github.com/devendrasingh25/ticketapp"
+  },
+  
+    {
+    id: 3,
+    title: "Weather App",
+    description: "Built a weather web app using HTML, CSS, and JavaScript with an interactive UI. Features a responsive design and a smart search bar that displays weather data only after a valid location is entered.",
+    image: "/4.png",
+    tags: ["Html", "CSS", "Javascript"],
+    demoUrl: "",
+    githubUrl: "https://github.com/devendrasingh25/Climate"
   },
   
 ];
@@ -77,7 +95,7 @@ const Work = () => {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-3 sm:p-6">
-                      <h3 className="text-xs sm:text-xl font-bold mb-1 sm:mb-3">
+                      <h3 className="text-xs sm:text-xl font-bold mb-1 text-accent sm:mb-3">
                         {proj.title}
                       </h3>
                       <p className="text-[10px] sm:text-base text-gray-300 mb-2 sm:mb-4">
@@ -88,7 +106,7 @@ const Work = () => {
                         {proj.tags.map((tag, idx) => (
                           <span
                             key={idx}
-                            className="bg-accent/40 text-white text-[9px] sm:text-sm font-medium px-2 py-0.5 rounded"
+                            className="bg-black/30 text-white text-[9px] sm:text-sm font-medium px-2 py-0.5 rounded"
                           >
                             {tag}
                           </span>
