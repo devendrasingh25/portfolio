@@ -11,6 +11,14 @@ const projects = [
  
   {
     id: 1,
+    title: " real-time chat app",
+    description: "A full-stack real-time chat application that allows users to send and receive messages instantly. It includes user authentication, online/offline status tracking, and dynamic message updates using WebSockets. The app is fully responsive, providing a smooth experience across all devices.",
+    image: "/5.png",
+    tags: ["daisy-ui", "frontend" , "backend with mongodb"],
+    demoUrl: "https://chatify-du5g.onrender.com/login/",
+    githubUrl: "https://github.com/devendrasingh25/chatty/tree/main/backend"},
+    {
+    id: 2,
     title: "Burger Store React app",
     description: "Built a responsive Food Delivery App UI using React, Vite, Tailwind CSS, and Bootstrap. Implemented clean layouts, smooth navigation, and reusable components. Used Vite for fast builds and Tailwind/Bootstrap for responsive styling.",
     image: "/3.png",
@@ -18,7 +26,7 @@ const projects = [
     demoUrl: "https://food-app-lake-tau.vercel.app/",
     githubUrl: "https://github.com/devendrasingh25/Food-App"},
     {
-    id: 2,
+    id: 3,
     title: "Movie Ticket App",
     description: "Developed a Movie Ticket Booking App using React, Tailwind CSS, and a backend with full CRUD support. Users can select movies, view live trailers, choose seats, and book tickets. Includes an admin panel for managing movies, showtimes, and bookings.",
     image: "/2.png",
@@ -28,7 +36,7 @@ const projects = [
   },
   
     {
-    id: 3,
+    id: 4,
     title: "Weather App",
     description: "Built a weather web app using HTML, CSS, and JavaScript with an interactive UI. Features a responsive design and a smart search bar that displays weather data only after a valid location is entered.",
     image: "/4.png",
